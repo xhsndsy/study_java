@@ -1,0 +1,287 @@
+14:34:27.783 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = Z
+14:46:36.666 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mailService': Unsatisfied dependency expressed through field 'zoneId': Error creating bean with name 'utc8' defined in com.example.springfirst.AppConfig: Failed to instantiate [java.time.ZoneId]: Factory method 'createZoneOfUTC8' threw exception with message: Invalid ID for offset-based ZoneId: UTC+8:00
+14:46:57.493 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mailService': Unsatisfied dependency expressed through field 'zoneId': Error creating bean with name 'createZoneOfUTC8' defined in com.example.springfirst.AppConfig: Failed to instantiate [java.time.ZoneId]: Factory method 'createZoneOfUTC8' threw exception with message: Invalid ID for offset-based ZoneId: UTC+8:00
+14:47:03.961 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mailService': Unsatisfied dependency expressed through field 'zoneId': Error creating bean with name 'createZoneOfUTC8' defined in com.example.springfirst.AppConfig: Failed to instantiate [java.time.ZoneId]: Factory method 'createZoneOfUTC8' threw exception with message: Invalid ID for offset-based ZoneId: UTC+8:00
+14:48:03.707 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mailService': Unsatisfied dependency expressed through field 'zoneId': Error creating bean with name 'createZoneOfUTC8' defined in com.example.springfirst.AppConfig: Failed to instantiate [java.time.ZoneId]: Factory method 'createZoneOfUTC8' threw exception with message: Invalid ID for offset-based ZoneId: UTC+8:00
+14:49:37.338 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = Z
+14:49:37.349 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createZoneOfUTC8' defined in com.example.springfirst.AppConfig: Failed to instantiate [java.time.ZoneId]: Factory method 'createZoneOfUTC8' threw exception with message: Invalid ID for offset-based ZoneId: UTC+8:00
+14:49:37.350 [main] INFO  c.e.springfirst.service.MailService - Shutdown mail service
+14:50:15.335 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = Z
+14:50:15.347 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'createZoneOfUTC8' defined in com.example.springfirst.AppConfig: Failed to instantiate [java.time.ZoneId]: Factory method 'createZoneOfUTC8' threw exception with message: Unknown time-zone ID: UTC8
+14:50:15.347 [main] INFO  c.e.springfirst.service.MailService - Shutdown mail service
+14:50:29.627 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = Z
+14:50:49.541 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00
+15:06:00.709 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00
+15:06:00.965 [main] INFO  c.e.springfirst.service.AppService - getResource
+15:09:28.673 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00
+15:10:00.982 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00
+15:10:21.395 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00
+15:13:42.384 [main] INFO  c.e.springfirst.service.AppService - Init success
+15:13:42.390 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00
+15:13:59.298 [main] INFO  c.e.springfirst.service.AppService - Init success
+15:13:59.303 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00
+15:18:56.988 [main] INFO  c.e.springfirst.service.AppService - Init success
+15:18:56.994 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00
+15:20:14.611 [main] INFO  c.e.springfirst.service.AppService - Init success
+15:20:14.618 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00
+15:20:35.377 [main] INFO  c.e.springfirst.service.AppService - Init success
+15:20:35.383 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00
+15:22:03.896 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+15:22:03.901 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00
+15:22:33.056 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+15:22:33.063 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00
+15:23:27.859 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appService': Invocation of init method failed
+15:23:41.319 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+15:23:41.326 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00
+15:39:37.775 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+15:39:37.781 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00
+15:45:50.662 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smtpConfig': Injection of autowired dependencies failed
+15:49:11.023 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smtpConfig': Injection of autowired dependencies failed
+15:50:39.798 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+15:50:39.820 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00, smtpHost = 127.0.0.1, smtpPort = 25
+15:51:10.005 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+15:51:10.028 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00, smtpHost = 127.0.0.1, smtpPort = 25
+15:51:25.113 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smtpConfig': Injection of autowired dependencies failed
+15:52:21.690 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smtpConfig': Injection of autowired dependencies failed
+15:52:54.742 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.springfirst.AppConfig]
+15:53:38.942 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.springfirst.AppConfig]
+15:54:16.475 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.springfirst.AppConfig]
+15:55:12.687 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.springfirst.AppConfig]
+15:58:15.440 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.springfirst.AppConfig]
+15:58:51.290 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.springfirst.AppConfig]
+15:59:15.658 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.springfirst.AppConfig]
+15:59:41.773 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.springfirst.AppConfig]
+15:59:58.475 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.springfirst.AppConfig]
+16:02:06.799 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.springfirst.AppConfig]
+16:03:40.462 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.springfirst.AppConfig]
+16:04:45.832 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+16:04:45.852 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00, smtpHost = 127.0.0.1, smtpPort = 25
+16:05:04.519 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+16:05:04.540 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00, smtpHost = 127.0.0.1, smtpPort = 25
+16:06:04.170 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+16:06:04.192 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00, smtpHost = 127.0.0.1, smtpPort = 25
+16:06:21.972 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smtpConfig': Injection of autowired dependencies failed
+17:17:19.394 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+17:17:19.415 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00, smtpHost = 127.0.0.1, smtpPort = 25
+10:04:07.118 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+10:04:07.169 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00, smtpHost = 127.0.0.1, smtpPort = 25
+10:35:32.815 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+10:35:32.856 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = UTC+08:00, smtpHost = 127.0.0.1, smtpPort = 25
+11:51:47.055 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appConfig': Injection of autowired dependencies failed
+11:59:47.374 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+11:59:47.401 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:59:47.642 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+11:59:47.643 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@150ede8b
+11:59:47.645 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:59:47.777 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = Asia/Shanghai, smtpHost = 10.237.81.188, smtpPort = 12345
+15:27:14.013 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:27:14.260 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+15:27:14.262 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@288214b1
+15:27:14.263 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:27:14.344 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+15:27:14.424 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = Asia/Shanghai, smtpHost = 10.237.81.188, smtpPort = 12345
+15:29:22.218 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:29:22.462 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+15:29:22.463 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@33a3c44a
+15:29:22.465 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:29:22.564 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+15:29:22.643 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = Asia/Shanghai, smtpHost = 10.237.81.188, smtpPort = 12345
+15:30:41.765 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:30:41.998 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+15:30:41.999 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@fb6097b
+15:30:42.000 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:30:42.083 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+15:30:42.161 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = Asia/Shanghai, smtpHost = 10.237.81.188, smtpPort = 12345
+15:32:51.380 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:32:51.626 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+15:32:51.627 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@1290c49
+15:32:51.628 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:32:51.707 [main] INFO  c.e.springfirst.service.AppService - <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dataSource" class="HikariDataSource" />
+    <bean id="bookService" class="BookService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    <bean id="userService" class="UserService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+</beans>
+15:32:51.774 [main] INFO  c.e.springfirst.service.MailService - Init mail service with zoneId = Asia/Shanghai, smtpHost = 10.237.81.188, smtpPort = 12345
